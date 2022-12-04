@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arm Sim</title>
+	<link rel="stylesheet" href="index.css">
+	<!-- <style type="text/css"></style> -->
+</head>
+<body>
+
+	<canvas id="armSim"></canvas>
+	<p></p>
+
+	<div class="uicontrols">
+		<div class="asideLeft" align="center">
+			<h3>Controls</h3>
+			<button class="button button1" onclick="uiResetAPs()">Reset</button>
+			<button class="button button1" onclick="uiRandomAPs()">Random</button>
+			<button class="button button1" onclick="uiRestart()">Restart</button>
+		</div>
+		<div class="asideCenter" align="center">
+			<h3>Targets</h3>
+			<button class="button button2" onclick="uiSetNoTargets()">None</button>
+			<button class="button button2" onclick="uiSetOneTarget()">One</button>
+			<button class="button button2" onclick="uiSetTwoTargets()">Two</button>
+		</div>
+		<div class="asideRight" align="center">
+			<h3>Speed</h3>
+			<button class="button button1" onclick="uiSetUpdate(0.01)">Slow</button>
+			<button class="button button1" onclick="uiSetUpdate(0.05)">Medium</button>
+			<button class="button button1" onclick="uiSetUpdate(0.1)">Fast</button>
+		</div>
+	</div>
+
+	<script src="armsim.js"></script>
+</body>
+</html>
